@@ -4,7 +4,7 @@
 
 // Calculate a space mission below
 
-// Print the results of the space mission calculations below
+// Print the results of the space mission calculations below.
 
 // Calculate a trip to the moon below
 
