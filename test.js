@@ -14,7 +14,7 @@
 
 //console.log(16 - 2 * 5 / 3 + 1);
 
-console.log(1 + 5 % 3);
+//console.log(1 + 5 % 3);
 
 //console.log(2 ** 2 ** 3 * 3);
 
@@ -22,9 +22,27 @@ console.log(1 + 5 % 3);
 
 // Testing the user input example.
 
-const input = require('readline-sync');  //Load the module. pulls in functions that allow input data from user.
+//const input = require('readline-sync');  //Load the module. pulls in functions that allow input data from user.
 
-let name = input.question("Enter your name: "); //Prompting the user.
+//let name = input.question("Enter your name: "); //Prompting the user.
 
-console.log(typeof name);
+//console.log(typeof name);
 //console.log("Hello, " + name + "!"); //Greeting the user with their name as they input the data.
+
+//Testing understanding of if, else if, and else conditionals.
+//let a = 7;
+//if (a % 2 === 1) {
+//   console.log("Launch");
+//} else if (a > 5) {
+//   console.log("Code");
+//} else {
+//   console.log("LaunchCode");
+//}
+
+let num = 5;
+
+if (num % 2 === 0) {
+    if (num % 2 === 1) {
+        console.log("odd");
+    }
+}
