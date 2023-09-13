@@ -5,6 +5,8 @@
 // Given the values for crewStatus and computerStatus, should launchReady be true or false after the check?  
 // Is the program behaving as expected?
 
+//Yes, it seems to be working correctly, however the launchReady = False do to the fuel level was just written over by the launchReady true by the crew and computer status. 
+
 let launchReady = false;
 // let fuelLevel = 17000;
 let crewStatus = true;
