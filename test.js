@@ -89,14 +89,80 @@
 // let selectedItems = [];
 
 // selectedItems = groceryBag.slice(2, 5).sort();
+// // console.log(selectedItems);
+
+// let school = [
+//   ["science", "computer", "art"],
+//   ["Jones", "Willoughby", "Rhodes"]
+// ];
+
+// school[0].push("dance");
+// console.log(school);
+// school[1].push("Holmes");
+// console.log(school);
+
+// let phrase = "JavaScript rocks!";
+// console.log(phrase.length);
+// console.log(phrase[phrase.length - 8]);
+
+// cityName = "Vienna";
+
+// stateName = "Virginia";
+
+// location = cityName + ", " + stateName;
+
+// console.log(location);
+
+// console.log(location.length);
+
+// let language = "JavaScript";
+// console.log(language.slice(1,6));
+// language.slice(0,5);
+// console.log(language);
+
+// let org = "       The LaunchCode Foundation ";
+// let trimmed = org.trim();
+
+// console.log(trimmed);
+
+// console.log('Launch\nCode');
+
+
+// let pluralNoun = "cows";
+// let name = "Katie";
+// let verb = "flip";
+// let adjective = "nice";
+// let color = "brown";
+
+// console.log(`JavaScript provides a ${color} collection of tools — including ${adjective} syntax and ${pluralNoun}
+// — that allows ${name} to ${verb} with strings.`);
+
+
+// let groceryBag = ['bananas', 'apples', 'edamame', 'chips', 'cucumbers', 'milk', 'cheese'];
+// let selectedItems = [];
+
+// selectedItems = groceryBag.slice(2, 5).sort();
 // console.log(selectedItems);
 
-let school = [
-  ["science", "computer", "art"],
-  ["Jones", "Willoughby", "Rhodes"]
-];
+// const school = [
+//   ["science", "computer", "art"],
+//   ["Jones", "Willoughby", "Rhodes"]
+// ];
+// school[0].push("dance");
+// school[1].splice(0,0,"Holmes");
+// console.log(school);
 
-school[0].push("dance");
-console.log(school);
-school[1].push("Holmes");
-console.log(school);
+// const input = require('readline-sync');
+
+// let myString = "Where does the .push() method put things in an array?";
+
+// console.log(myString.indexOf("y"));
+// console.log(myString.length);
+
+// console.log(myString[0]);
+
+let phrase = "Chili Cook-off";
+
+for (let i = 0; i < phrase.length - 1; i = i + 3) {
+   console.log(phrase[i]);
+}
