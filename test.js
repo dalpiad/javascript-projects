@@ -4,22 +4,22 @@ const input = require('readline-sync');  //Load the module. pulls in functions t
 //   console.log(i);
 // }
 
- let code = '';
+//  let code = '';
 
- /// Code your Bonus Mission Solution here ///
- string1 = "AaBbCcDdEeFfGgHhIiJjKkLl";
- string2 = "1!2@3#4$5%6^7&8*9?0~";
+//  /// Code your Bonus Mission Solution here ///
+//  string1 = "AaBbCcDdEeFfGgHhIiJjKkLl";
+//  string2 = "1!2@3#4$5%6^7&8*9?0~";
 
-let codeLength = input.question("How many characters would you like you password? Must be an even integer: ")
-codeArray = [];
+// let codeLength = input.question("How many characters would you like you password? Must be an even integer: ")
+// codeArray = [];
 
-for (let i = 0; i < (codeLength/2); i++) {
- codeArray.push(string1[Math.floor(Math.random()*string1.length)] + string2[Math.floor(Math.random()*string2.length)]); 
-}
+// for (let i = 0; i < (codeLength/2); i++) {
+//  codeArray.push(string1[Math.floor(Math.random()*string1.length)] + string2[Math.floor(Math.random()*string2.length)]); 
+// }
 
-code = codeArray.join('');
+// code = codeArray.join('');
 
-console.log(code);
+// console.log(code);
 
 // let protein = ['chicken', 'pork', 'tofu', 'beef', 'fish', 'beans'];
 // let grains = ['rice', 'pasta', 'corn', 'potato', 'quinoa', 'crackers'];
@@ -39,3 +39,7 @@ console.log(code);
 // }
 
 // console.log(meals);
+let charTest = 'apple'
+if (typeof charTest == 'string') {
+    console.log('yes')
+}
