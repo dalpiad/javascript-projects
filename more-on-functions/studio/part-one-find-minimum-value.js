@@ -1,4 +1,13 @@
 //1) Create a function with an array of numbers as its parameter. The function should iterate through the array and return the minimum value from the array. Hint: Use what you know about if statements to identify and store the smallest value within the array.
+function sortArray(arrayOfNums) {
+    let smallestValue = [arrayOfNums[0]];
+    for (let i = 0; i < arrayOfNums.length; i++) {
+        if (arrayOfNums[i] < smallestValue[0]) {
+            smallestValue[0] = arrayOfNums[i];
+        }
+    }
+    return smallestValue;
+}
 
 //Sample arrays for testing:
 let nums1 = [5, 10, 2, 42];
@@ -7,4 +16,4 @@ let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
 
 //Using one of the test arrays as the argument, call your function inside the console.log statement below.
 
-console.log(/* your code here */);
+console.log(sortArray(nums3));
