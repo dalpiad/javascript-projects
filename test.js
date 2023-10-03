@@ -39,7 +39,28 @@ const input = require('readline-sync');  //Load the module. pulls in functions t
 // }
 
 // console.log(meals);
-let charTest = 'apple'
-if (typeof charTest == 'string') {
-    console.log('yes')
+// let charTest = 'apple'
+// if (typeof charTest == 'string') {
+//     console.log('yes')
+// }
+
+let students = {
+    names: ["Gerard Darris", "Banana Cat", "Apple Dog", "Mango Zebra", "Kiwi Kiwi"],
+    scores: [100, 95, 74, 82, 91]
+};
+
+// for (let i = 0; i < students.names.length; i++) {
+//     for (let key in students) {
+//         console.log(`${key}: ${students[key][i]}`)
+//     }
+// };
+
+for (let i = 0; i < students["names"].length; i++) {
+    let output = "";
+
+    for (items in students) {
+        output += `${students[items][i]}: `
+    }
+    console.log(output.slice(0, -2));
 }
+console.log(Math.round(Math.random()*1000)/10)
