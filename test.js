@@ -55,12 +55,22 @@ let students = {
 //     }
 // };
 
-for (let i = 0; i < students["names"].length; i++) {
-    let output = "";
+// for (let i = 0; i < students["names"].length; i++) {
+//     let output = "";
 
-    for (items in students) {
-        output += `${students[items][i]}: `
-    }
-    console.log(output.slice(0, -2));
-}
-console.log(Math.round(Math.random()*1000)/10)
+//     for (items in students) {
+//         output += `${students[items][i]}: `
+//     }
+//     console.log(output.slice(0, -2));
+// }
+// console.log(Math.round(Math.random()*1000)/10)
+
+let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    ";
+
+// First, print out the dna strand in it's current state.
+console.log(dna);
+//1) Use the .trim() method to remove the leading and trailing whitespace, then print the result.
+console.log(dna.trim());
+
+//2) Change all of the letters in the dna string to UPPERCASE, then print the result.
+console.log(dna.toUpperCase());
