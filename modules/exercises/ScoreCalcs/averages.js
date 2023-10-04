@@ -17,3 +17,7 @@ function averageForTest(testIndex,scores){
 }
 
 //TODO: Export all functions within an object.
+module.exports = {
+  testAverages: averageForTest,
+  studentAverages: averageForStudent
+};
