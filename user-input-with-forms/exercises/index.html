@@ -7,8 +7,44 @@
       label { display: block; margin-bottom: 7px;}
     </style>
   </head>
+  <script>
+    window.addEventListener("load", function() {
+        let form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+        let nameInput = document.querySelector("input[name=testName]");
+        let dateInput = document.querySelector("input[name=testDate]");
+        let rocketInput = document.querySelector("input[name=rocketType]");
+        let boosterInput = document.querySelector("input[name=boosterCount]");
+        let windInput = document.querySelector("input[name=windRating]");
+        let serverInput = document.querySelector("input[name=productionServers]");
+        if (nameInput.value === "" || dateInput.value === "" || rocketInput.value === "" || boosterInput.value === "" || windInput.value === "" || serverInput.value === "") {
+            alert("All fields are required!");
+            event.preventDefault();
+        }
+        });
+    });
+</script>
   <body>
     <!-- TODO: add form here -->
+    <form method="POST" action="https://handlers.education.launchcode.org/request-parrot">
+      <label>Test Name <input type="text" name="testName"/></label>
+      <label>Test Date <input type="date" name="testDate"/></label>
+      <label>Rocket Type <select name="rocketType">
+        <option value="">Select Rocket</option>
+        <option value="Brant">Brant</option>
+        <option value="Lynx">Lynx</option>
+        <option value="Orion">Orion</option>
+        <option value="Terrier">Terrier</option>
+      </select> 
+      </label>
+      <label>Number of Rocket Boosters <input type="number" name="boosterCount" min="1" max="10"/></label>
+      Wind Rating: 
+      <label>No Wind <input type="radio" name="windRating" value="0"/></label>
+      <label>Mild <input type="radio" name="windRating" value="10"/></label>
+      <label>Strong <input type="radio" name="windRating" value="20"/></label>
+      <label>Use production grade servers <input type="checkbox" name="productionServers"/></label>
+      <button>Run Simulation</button>
+    </form>
     
 
     <p>WARNING: This ONLY works in <b>replit</b> if this "result" page is opened in its own window. Click the icon that shows a box with an arrow coming out of it.
